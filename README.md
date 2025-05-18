@@ -34,7 +34,7 @@ A simple, elegant Flutter application that simulates an electronic prayer beads 
 
 ## Video from app
 
-> Add your own screenshots in the `assets/screenshots/` folder and update paths below.
+> Add your own video in the `lib/utils/assets/` folder and update paths below.
 
 ![Sebha App Demo](lib/utils/assets/sebha_demo.gif)
 
