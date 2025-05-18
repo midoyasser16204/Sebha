@@ -32,13 +32,11 @@ A simple, elegant Flutter application that simulates an electronic prayer beads 
 
 ---
 
-## Screenshots
+## Video from app
 
 > Add your own screenshots in the `assets/screenshots/` folder and update paths below.
 
-![Onboarding Screen](assets/screenshots/onboarding.png)
-![Main Counter](assets/screenshots/main_counter.png)
-![Tasbih Selector](assets/screenshots/selector.png)
+![Sebha App Demo](lib/utils/assets/sebha_demo.gif)
 
 ---
 
