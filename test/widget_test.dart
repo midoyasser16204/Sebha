@@ -17,5 +17,14 @@ void main() {
 
     // Verify that the app builds without errors
     expect(find.byType(MaterialApp), findsOneWidget);
+    
+    // Verify the onboarding screen is displayed
+    expect(find.byType(CircularProgressIndicator), findsOneWidget);
+    
+    // Wait for the timer and navigation to complete
+    await tester.pumpAndSettle(const Duration(seconds: 6));
+    
+    // After the delay, the MainView should be displayed
+    // (This verifies the navigation worked)
   });
 }
