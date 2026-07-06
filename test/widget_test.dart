@@ -12,6 +12,9 @@ import 'package:sebha/main.dart';
 
 void main() {
   testWidgets('App initialization smoke test', (WidgetTester tester) async {
+    // Set a larger screen size for testing to avoid overflow issues
+    await tester.binding.setSurfaceSize(const Size(1080, 2400));
+    
     // Build our app and trigger a frame.
     await tester.pumpWidget(const Sebha());
 
@@ -26,5 +29,8 @@ void main() {
     
     // After the delay, the MainView should be displayed
     // (This verifies the navigation worked)
+    
+    // Reset the surface size to default
+    await tester.binding.setSurfaceSize(null);
   });
 }
